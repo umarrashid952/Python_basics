@@ -17,8 +17,9 @@ features: printing, loops, list comprehensions, recursion, and basic OOP.
 | `listcomp.py`   | List comprehensions with a filter condition                           |
 | `listcomp2.py`  | List comprehensions filtering/transforming strings                    |
 | `quickSort.py`  | Recursive quicksort using list comprehensions                         |
-| `shop.py`       | `FruitShop` class demonstrating basic OOP                             |
+| `shop.py`       | `FruitShop` class demonstrating basic OOP, with inventory tracking, restocking, and order discounts |
 | `shopTest.py`   | Demo script that imports `shop.py` and exercises `FruitShop`          |
+| `test_shop.py`  | `unittest` suite covering `FruitShop`, including stock limits and discounts |
 
 ## Running
 
@@ -31,3 +32,9 @@ python shopTest.py
 ```
 
 `shopTest.py` imports `shop.py`, so both files must stay in the same directory.
+
+Run the automated test suite with:
+
+```bash
+python -m unittest test_shop.py
+```
